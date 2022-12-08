@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panic-Function</title>
+</head>
+<body>
+    <div class="wrapper">
+        <input type="text" placeholder="enter your msg">
+        <button>Click Me</button>
+        <p></p>
+    </div>
+    <script>
+        let btn = document.querySelector("button")
+        let inp = document.querySelector("input")
+        let para = document.querySelector("p")
+
+        function panic(input){
+            
+            let caps = inp.value.toUpperCase()+"!"
+            para.innerHTML = caps
+        
+        let click = caps.split(" ").join("👍")
+            para.innerHTML=click
+      
+    }
+    btn.onclick = ()=>{
+            panic();
+        }
+
+    </script>
+</body>
+</html>
